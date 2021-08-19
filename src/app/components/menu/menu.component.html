@@ -1,0 +1,53 @@
+
+<br />
+<div class="container">
+         <div style="justify-content: center;align-items: center;">
+                <ul ngbNav #nav="ngbNav" class="nav nav-pills card-header-pills">
+                    <li ngbNavItem>
+                      <a ngbNavLink>inicio</a>
+                      <ng-template ngbNavContent>
+                        <br>
+                        <div class="card-body">
+                        
+                          <app-inicio></app-inicio>
+                        </div>
+                        
+                      </ng-template>
+                    </li>
+                    <li ngbNavItem>
+                      <a ngbNavLink>Quienes somos</a>
+                      <ng-template ngbNavContent>
+                        <br>
+                        <app-we></app-we>
+                      </ng-template>
+                    </li>
+                    <li ngbNavItem>
+                      <a ngbNavLink>Product</a>
+                      <ng-template ngbNavContent>
+                        <br>
+                        <app-productlist></app-productlist>
+                      </ng-template>
+                    </li>
+                    <li ngbNavItem>
+                      <a ngbNavLink>Clientes</a>
+                      <ng-template ngbNavContent>
+                        <br>
+                       <app-add-client></app-add-client>
+                      </ng-template>
+                    </li>
+                    <li ngbNavItem>
+                      <a ngbNavLink>Citas</a>
+                      <ng-template ngbNavContent>
+                        <br>
+                        <app-citaadd></app-citaadd>
+                      </ng-template>
+                    </li>
+                  </ul>
+                  
+                  <div [ngbNavOutlet]="nav" class="mt-2"></div>
+                </div>
+    
+    </div>
+
+
+

@@ -1,0 +1,15 @@
+<ul ngbNav #nav="ngbNav" class="nav-tabs">
+    <li ngbNavItem>
+      <a ngbNavLink>Listado de clientes</a>
+      <ng-template ngbNavContent>
+        <app-productlist></app-productlist>
+      </ng-template>
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink>Ingreso de cliente</a>
+      <ng-template ngbNavContent>
+        <app-productadd></app-productadd>
+      </ng-template>
+    </li>
+  </ul>
+  
